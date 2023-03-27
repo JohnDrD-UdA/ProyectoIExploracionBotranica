@@ -1,0 +1,22 @@
+#Creacion del ambiente virual:
+	- instalar python en la maquina
+	- en un terminal correr el comando: 
+		//pip install virtualenv
+	- Una vez con la depencia, ir a la carpeta donde se desea guardar el env y correr:
+		python venv .env
+	- Ir a la carptea .env/Scrips generada y corre en terminal
+		activate
+	- seguido de esto correr el comando:
+		pip install -r [path del archivo requirements.txt]
+
+#Cómo ejecutar la aplicación:
+
+Lo siguiente que debes hacer es ejecutar el archivo run.py desde la consola de comandos. 
+Para ello, debes abrir la consola de comandos, ubicarte en la carpeta donde se encuentran 
+los archivos del proyecto y ejecutar el comando:
+
+'python run.py'
+
+Este comando iniciará el servidor de Flask y lo dejará escuchando en el puerto predeterminado 
+(que es el puerto 5000). Después de ejecutar este comando, podrás abrir tu navegador web y 
+acceder a la dirección http://localhost:5000 para ver tu aplicación en acción.
