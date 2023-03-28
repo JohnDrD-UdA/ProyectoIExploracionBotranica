@@ -20,3 +20,29 @@ los archivos del proyecto y ejecutar el comando:
 Este comando iniciará el servidor de Flask y lo dejará escuchando en el puerto predeterminado 
 (que es el puerto 5000). Después de ejecutar este comando, podrás abrir tu navegador web y 
 acceder a la dirección http://localhost:5000 para ver tu aplicación en acción.
+
+
+#Cómo ver las tablas de la aplicación:
+
+Una vez ejecutado run.py, para ver las tablas de la base de datos en la consola de SQL, debes 
+acceder a la línea de comandos de SQLite. Puedes hacerlo ejecutando el siguiente comando en tu terminal:
+
+sqlite3 db.sqlite3
+
+Esto te llevará a la consola de SQLite. A partir de aquí, puedes ejecutar el comando .tables para ver todas 
+las tablas de la base de datos:
+
+sqlite> .tables
+
+Deberías ver todas las tablas que has creado en tu aplicación, incluyendo la tabla "plant" y "image_repository" 
+que creaste con SQLAlchemy.
+
+Para ver los detalles de la tabla Plant_Info en sqlite3, puedes ejecutar los siguientes comandos en la consola de sqlite3:
+
+Abre la base de datos ejecutando sqlite3 db.sqlite3.
+
+En la consola de sqlite3, ejecuta .schema Plant_Info para ver el esquema de la tabla Plant_Info.
+
+Si quieres ver todos los registros de la tabla Plant_Info, ejecuta SELECT * FROM Plant_Info;.
+
+Para salir de la consola de SQLite, simplemente escribe .exit o presiona Ctrl+D.

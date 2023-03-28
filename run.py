@@ -11,6 +11,5 @@ app.register_blueprint(plant_bp)
 
 if __name__ == '__main__':
     with app.app_context():
-        db.create_all()
+        db.create_all().table
     app.run()
-
